@@ -116,9 +116,9 @@ export default function App() {
           HV Safety • Commissioning • Control • Project Delivery
         </p>
 
-        <h1 style={{
+      <h1 style={{
   fontSize: "clamp(42px, 5.2vw, 82px)",
-  lineHeight: "1.08",
+  lineHeight: "1.06",
   letterSpacing: "0.5px",
   maxWidth: "900px",
   margin: "0 auto",
