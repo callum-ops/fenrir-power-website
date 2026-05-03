@@ -112,7 +112,7 @@ export default function App() {
     backgroundImage: "url('/turbine.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    filter: "grayscale(50%) brightness(0.20)",
+    filter: "grayscale(10%) brightness(0.60)",
     transform: "scale(1.03)",
     zIndex: 0
   }} />
