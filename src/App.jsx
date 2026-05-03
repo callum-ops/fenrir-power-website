@@ -45,6 +45,15 @@ const values = [
   "Commercial awareness"
 ];
 
+const projects = [
+  ["East Anglia THREE Offshore Wind Farm", "400kV Control Engineer / Control Person"],
+  ["Sofia Offshore Wind Farm", "Offshore 66kV SAP"],
+  ["Baltic Eagle Offshore Wind Farm", "Offshore 66kV SAP"],
+  ["Fécamp Offshore Wind Farm", "Offshore HV SAP"],
+  ["Yunlin Offshore Wind Farm", "HV Supervisor / Offshore Installation Manager"],
+  ["Onshore Renewable & Grid Infrastructure", "HV commissioning, energisation, SAP and project engineering support"]
+];
+
 export default function App() {
   return (
     <div style={{ background: "#0b0b0b", color: "white", fontFamily: "Arial, sans-serif" }}>
@@ -138,40 +147,49 @@ export default function App() {
           justifyContent: "center"
         }}>
           <a href="mailto:info@fenrirpower.com">
-            <button
-              style={{
-                padding: "16px 30px",
-                background: "#f5b642",
-                color: "#111",
-                border: "none",
-                fontWeight: "800",
-                cursor: "pointer",
-                transition: "0.3s",
-                borderRadius: "3px"
-              }}
-              onMouseOver={e => e.target.style.background = "#ffffff"}
-              onMouseOut={e => e.target.style.background = "#f5b642"}
-            >
+            <button style={{
+              padding: "16px 30px",
+              background: "#f5b642",
+              color: "#111",
+              border: "none",
+              fontWeight: "800",
+              cursor: "pointer",
+              transition: "0.3s",
+              borderRadius: "3px"
+            }}>
               Request Availability
             </button>
           </a>
 
           <a href="#services">
-            <button
-              style={{
-                padding: "16px 30px",
-                background: "transparent",
-                color: "white",
-                border: "1px solid rgba(255,255,255,0.25)",
-                fontWeight: "700",
-                cursor: "pointer",
-                borderRadius: "3px"
-              }}
-            >
+            <button style={{
+              padding: "16px 30px",
+              background: "transparent",
+              color: "white",
+              border: "1px solid rgba(255,255,255,0.25)",
+              fontWeight: "700",
+              cursor: "pointer",
+              borderRadius: "3px"
+            }}>
               View Services
             </button>
           </a>
         </div>
+      </section>
+
+      {/* HIRE STRIP */}
+      <section style={{
+        padding: "40px 20px",
+        background: "#f5b642",
+        color: "#111",
+        textAlign: "center",
+        fontWeight: "900",
+        fontSize: "18px",
+        lineHeight: "1.6"
+      }}>
+        Available for HV SAP, Control Engineer, Commissioning, Project Engineer and Project Management support.
+        <br />
+        UK • Europe • Onshore • Offshore • Contract or Consultancy
       </section>
 
       {/* AUTHORITY STRIP */}
@@ -187,10 +205,7 @@ export default function App() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" style={{
-        padding: "110px 20px",
-        boxSizing: "border-box"
-      }}>
+      <section id="services" style={{ padding: "110px 20px", boxSizing: "border-box" }}>
         <div style={{ maxWidth: "1120px", marginInline: "auto" }}>
           <p style={{
             color: "#f5b642",
@@ -225,11 +240,7 @@ export default function App() {
                 background: "linear-gradient(180deg, #141414, #0f0f0f)"
               }}>
                 <h3 style={{ margin: 0, fontSize: "21px" }}>{service.title}</h3>
-                <p style={{
-                  marginTop: "14px",
-                  color: "#bdbdbd",
-                  lineHeight: "1.65"
-                }}>
+                <p style={{ marginTop: "14px", color: "#bdbdbd", lineHeight: "1.65" }}>
                   {service.text}
                 </p>
               </div>
@@ -239,11 +250,7 @@ export default function App() {
       </section>
 
       {/* EXPERIENCE */}
-      <section id="experience" style={{
-        padding: "110px 20px",
-        background: "#111",
-        boxSizing: "border-box"
-      }}>
+      <section id="experience" style={{ padding: "110px 20px", background: "#111", boxSizing: "border-box" }}>
         <div style={{
           maxWidth: "1120px",
           marginInline: "auto",
@@ -303,12 +310,31 @@ export default function App() {
         </div>
       </section>
 
+      {/* TRUST SIGNALS */}
+      <section style={{ padding: "95px 20px", background: "#0b0b0b", textAlign: "center" }}>
+        <h2 style={{ fontSize: "clamp(34px, 4vw, 52px)", margin: 0 }}>
+          High-voltage experience that reduces project risk.
+        </h2>
+
+        <ul style={{
+          marginTop: "30px",
+          color: "#bbb",
+          lineHeight: "1.9",
+          textAlign: "left",
+          maxWidth: "650px",
+          marginInline: "auto",
+          fontSize: "18px"
+        }}>
+          <li>13+ years electrical power and HV experience</li>
+          <li>Senior Authorised Person level capability</li>
+          <li>400kV Control Engineer / Control Person experience</li>
+          <li>Onshore and offshore project delivery background</li>
+          <li>Experienced in energisation, switching and Safety from the System</li>
+        </ul>
+      </section>
+
       {/* CONTROL ENGINEER */}
-      <section style={{
-        padding: "110px 20px",
-        background: "#0b0b0b",
-        boxSizing: "border-box"
-      }}>
+      <section style={{ padding: "110px 20px", background: "#111", boxSizing: "border-box" }}>
         <div style={{
           maxWidth: "1120px",
           marginInline: "auto",
@@ -361,75 +387,6 @@ export default function App() {
               <div key={item} style={{
                 padding: "18px",
                 border: "1px solid rgba(255,255,255,0.08)",
-                background: "#111",
-                borderRadius: "10px",
-                color: "#e7e7e7",
-                fontWeight: "700"
-              }}>
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* PROJECT ENGINEERING */}
-      <section style={{
-        padding: "110px 20px",
-        background: "#111",
-        boxSizing: "border-box"
-      }}>
-        <div style={{
-          maxWidth: "1120px",
-          marginInline: "auto",
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-          gap: "50px",
-          alignItems: "start"
-        }}>
-          <div>
-            <p style={{
-              color: "#f5b642",
-              letterSpacing: "0.16em",
-              fontWeight: "700",
-              fontSize: "13px",
-              textTransform: "uppercase"
-            }}>
-              Project Engineer & Management Consultancy
-            </p>
-
-            <h2 style={{
-              fontSize: "clamp(36px, 4vw, 56px)",
-              lineHeight: "1.1",
-              margin: "14px 0 0"
-            }}>
-              Technical delivery support for complex HV scopes.
-            </h2>
-
-            <p style={{
-              marginTop: "24px",
-              color: "#c7c7c7",
-              lineHeight: "1.75",
-              fontSize: "18px"
-            }}>
-              Support for project teams requiring practical HV engineering input, construction-phase coordination,
-              commissioning planning, contractor interface management and delivery oversight across high-risk electrical scopes.
-            </p>
-          </div>
-
-          <div style={{ display: "grid", gap: "14px" }}>
-            {[
-              "Project engineering support for HV packages",
-              "Commissioning and energisation planning",
-              "Technical interface and contractor coordination",
-              "Programme risk and delivery support",
-              "Review of RAMS, test packs and energisation packs",
-              "Client, contractor and control-room coordination",
-              "Practical support from construction through handover"
-            ].map((item) => (
-              <div key={item} style={{
-                padding: "18px",
-                border: "1px solid rgba(255,255,255,0.08)",
                 background: "#0b0b0b",
                 borderRadius: "10px",
                 color: "#e7e7e7",
@@ -442,12 +399,8 @@ export default function App() {
         </div>
       </section>
 
-      {/* SELECTED PROJECT EXPERIENCE */}
-      <section id="projects" style={{
-        padding: "110px 20px",
-        background: "#0b0b0b",
-        boxSizing: "border-box"
-      }}>
+      {/* PROJECTS */}
+      <section id="projects" style={{ padding: "110px 20px", background: "#0b0b0b", boxSizing: "border-box" }}>
         <div style={{ maxWidth: "1120px", marginInline: "auto" }}>
           <p style={{
             color: "#f5b642",
@@ -472,25 +425,14 @@ export default function App() {
             gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
             gap: "22px"
           }}>
-            {[
-              ["East Anglia THREE Offshore Wind Farm", "400kV Control Person / Control Engineer"],
-              ["Sofia Offshore Wind Farm", "Offshore 66kV SAP"],
-              ["Baltic Eagle Offshore Wind Farm", "Offshore 66kV SAP"],
-              ["Fécamp Offshore Wind Farm", "Offshore HV SAP"],
-              ["Yunlin Offshore Wind Farm", "HV Supervisor / Offshore Installation Manager"],
-              ["Onshore Renewable & Grid Infrastructure", "HV commissioning, energisation, SAP and project engineering support"]
-            ].map(([project, role]) => (
+            {projects.map(([project, role]) => (
               <div key={project} style={{
                 padding: "28px",
                 border: "1px solid rgba(255,255,255,0.08)",
                 borderRadius: "14px",
                 background: "#111"
               }}>
-                <h3 style={{
-                  margin: 0,
-                  fontSize: "21px",
-                  color: "white"
-                }}>
+                <h3 style={{ margin: 0, fontSize: "21px", color: "white" }}>
                   {project}
                 </h3>
 
@@ -509,11 +451,7 @@ export default function App() {
       </section>
 
       {/* HOW I WORK */}
-      <section style={{
-        padding: "110px 20px",
-        boxSizing: "border-box",
-        background: "#111"
-      }}>
+      <section style={{ padding: "110px 20px", boxSizing: "border-box", background: "#111" }}>
         <div style={{ maxWidth: "1120px", marginInline: "auto", textAlign: "center" }}>
           <p style={{
             color: "#f5b642",
@@ -597,11 +535,7 @@ export default function App() {
           info@fenrirpower.com
         </a>
 
-        <p style={{
-          marginTop: "70px",
-          color: "#666",
-          fontSize: "14px"
-        }}>
+        <p style={{ marginTop: "70px", color: "#666", fontSize: "14px" }}>
           © {new Date().getFullYear()} Fenrir Power Limited. HV Safety, Commissioning, Control & Project Delivery.
         </p>
       </section>
