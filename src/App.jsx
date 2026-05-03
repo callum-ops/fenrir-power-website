@@ -18,9 +18,12 @@ export default function App() {
         boxSizing: "border-box"
       }}>
         <img
-          src="/fulllogo_transparent.png"
+          src="/fulllogo_transparent-white.png"
           alt="Fenrir Power"
-          style={{ height: "50px" }}
+          style={{
+            height: "50px",
+            objectFit: "contain"
+          }}
         />
 
         <div style={{ display: "flex", gap: "30px" }}>
