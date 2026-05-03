@@ -470,12 +470,15 @@ export default function App() {
             Safe. Structured. Controlled.
           </h2>
 
-          <div style={{
-            marginTop: "46px",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-            gap: "22px"
-          }}>
+        <div style={{
+  marginTop: "46px",
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "center",
+  gap: "22px",
+  maxWidth: "900px",
+  marginInline: "auto"
+}}>
             {values.map((value) => (
               <div key={value} style={{
                 padding: "26px",
