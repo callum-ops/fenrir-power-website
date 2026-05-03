@@ -117,15 +117,17 @@ export default function App() {
         </p>
 
         <h1 style={{
-          fontSize: "clamp(44px, 6vw, 88px)",
-          lineHeight: "1.02",
-          letterSpacing: "1px",
-          maxWidth: "1100px",
-          margin: 0,
-          fontWeight: "900"
-        }}>
-          HV SUPPORT FOR HIGH-RISK, PROJECT-CRITICAL ENVIRONMENTS
-        </h1>
+  fontSize: "clamp(42px, 5.2vw, 82px)",
+  lineHeight: "1.08",
+  letterSpacing: "0.5px",
+  maxWidth: "900px",
+  margin: "0 auto",
+  textAlign: "center"
+}}>
+  HV SUPPORT FOR<br />
+  HIGH-RISK, PROJECT-CRITICAL<br />
+  ENVIRONMENTS
+</h1>
 
         <p style={{
           marginTop: "28px",
@@ -480,13 +482,15 @@ export default function App() {
   marginInline: "auto"
 }}>
             {values.map((value) => (
-              <div key={value} style={{
-                padding: "26px",
-                background: "#0b0b0b",
-                border: "1px solid rgba(255,255,255,0.08)",
-                borderRadius: "12px",
-                fontWeight: "800"
-              }}>
+             <div key={value} style={{
+  padding: "26px",
+  background: "#0b0b0b",
+  border: "1px solid rgba(255,255,255,0.08)",
+  borderRadius: "12px",
+  fontWeight: "800",
+  width: "260px",
+  textAlign: "center"
+}}>
                 {value}
               </div>
             ))}
