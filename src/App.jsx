@@ -18,7 +18,7 @@ export default function App() {
         boxSizing: "border-box"
       }}>
         <img
-          src="/logo.png"
+          src="/fulllogo_transparent.png"
           alt="Fenrir Power"
           style={{ height: "50px" }}
         />
