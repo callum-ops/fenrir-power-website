@@ -93,92 +93,121 @@ export default function App() {
       </div>
 
       {/* HERO */}
-      <section style={{
-        minHeight: "100vh",
-        paddingTop: "150px",
-        paddingInline: "20px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        textAlign: "center",
-        boxSizing: "border-box",
-        background: "radial-gradient(circle at 50% 20%, rgba(245,182,66,0.12), transparent 35%)"
-      }}>
-        <p style={{
-          color: "#f5b642",
-          letterSpacing: "0.18em",
-          fontWeight: "700",
-          fontSize: "13px",
-          marginBottom: "22px",
-          textTransform: "uppercase"
-        }}>
-          HV Safety • Commissioning • Control • Project Delivery
-        </p>
+<section style={{
+  position: "relative",
+  minHeight: "100vh",
+  paddingTop: "150px",
+  paddingInline: "20px",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  textAlign: "center",
+  boxSizing: "border-box",
+  overflow: "hidden"
+}}>
+  <div style={{
+    position: "absolute",
+    inset: 0,
+    backgroundImage: "url('/turbine.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    filter: "grayscale(100%) brightness(0.28)",
+    transform: "scale(1.03)",
+    zIndex: 0
+  }} />
+
+  <div style={{
+    position: "absolute",
+    inset: 0,
+    background: "linear-gradient(180deg, rgba(0,0,0,0.65), rgba(0,0,0,0.82))",
+    zIndex: 1
+  }} />
+
+  <div style={{
+    position: "absolute",
+    inset: 0,
+    background: "radial-gradient(circle at 50% 20%, rgba(245,182,66,0.18), transparent 38%)",
+    zIndex: 2
+  }} />
+
+  <div style={{ position: "relative", zIndex: 3 }}>
+    <p style={{
+      color: "#f5b642",
+      letterSpacing: "0.18em",
+      fontWeight: "700",
+      fontSize: "13px",
+      marginBottom: "22px",
+      textTransform: "uppercase"
+    }}>
+      HV Safety • Commissioning • Control • Project Delivery
+    </p>
 
     <h1 style={{
-  fontSize: "clamp(38px, 4.6vw, 72px)",
-  lineHeight: "1.08",
-  letterSpacing: "0.5px",
-  maxWidth: "1200px",
-  margin: "0 auto",
-  textAlign: "center",
-  whiteSpace: "normal"
-}}>
-  HV SUPPORT FOR<br />
-  HIGH-RISK, PROJECT-CRITICAL<br />
-  ENVIRONMENTS
-</h1>
+      fontSize: "clamp(38px, 4.6vw, 72px)",
+      lineHeight: "1.08",
+      letterSpacing: "0.5px",
+      maxWidth: "1200px",
+      margin: "0 auto",
+      textAlign: "center",
+      whiteSpace: "normal"
+    }}>
+      HV SUPPORT FOR<br />
+      HIGH-RISK, <span style={{ color: "#f5b642" }}>PROJECT-CRITICAL</span><br />
+      ENVIRONMENTS
+    </h1>
 
-        <p style={{
-          marginTop: "28px",
-          fontSize: "clamp(17px, 1.5vw, 21px)",
-          maxWidth: "860px",
-          color: "#c7c7c7",
-          lineHeight: "1.7"
+    <p style={{
+      marginTop: "28px",
+      fontSize: "clamp(17px, 1.5vw, 21px)",
+      maxWidth: "860px",
+      color: "#d0d0d0",
+      lineHeight: "1.7",
+      marginInline: "auto"
+    }}>
+      Fenrir Power provides specialist SAP, control engineering, commissioning, energisation,
+      project engineering and project management support for HV projects across onshore and offshore wind,
+      solar, energy from waste, network infrastructure and critical power systems.
+    </p>
+
+    <div style={{
+      marginTop: "40px",
+      display: "flex",
+      gap: "16px",
+      flexWrap: "wrap",
+      justifyContent: "center"
+    }}>
+      <a href="mailto:info@fenrirpower.com">
+        <button style={{
+          padding: "16px 30px",
+          background: "#f5b642",
+          color: "#111",
+          border: "none",
+          fontWeight: "800",
+          cursor: "pointer",
+          transition: "0.3s",
+          borderRadius: "3px"
         }}>
-          Fenrir Power provides specialist SAP, control engineering, commissioning, energisation,
-          project engineering and project management support for HV projects across onshore and offshore wind,
-          solar, energy from waste, network infrastructure and critical power systems.
-        </p>
+          Request Availability
+        </button>
+      </a>
 
-        <div style={{
-          marginTop: "40px",
-          display: "flex",
-          gap: "16px",
-          flexWrap: "wrap",
-          justifyContent: "center"
+      <a href="#services">
+        <button style={{
+          padding: "16px 30px",
+          background: "rgba(0,0,0,0.25)",
+          color: "white",
+          border: "1px solid rgba(255,255,255,0.28)",
+          fontWeight: "700",
+          cursor: "pointer",
+          borderRadius: "3px"
         }}>
-          <a href="mailto:info@fenrirpower.com">
-            <button style={{
-              padding: "16px 30px",
-              background: "#f5b642",
-              color: "#111",
-              border: "none",
-              fontWeight: "800",
-              cursor: "pointer",
-              transition: "0.3s",
-              borderRadius: "3px"
-            }}>
-              Request Availability
-            </button>
-          </a>
-
-          <a href="#services">
-            <button style={{
-              padding: "16px 30px",
-              background: "transparent",
-              color: "white",
-              border: "1px solid rgba(255,255,255,0.25)",
-              fontWeight: "700",
-              cursor: "pointer",
-              borderRadius: "3px"
-            }}>
-              View Services
-            </button>
-          </a>
-        </div>
-      </section>
+          View Services
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
 
       {/* HIRE STRIP */}
       <section style={{
