@@ -5,40 +5,44 @@ const services = [
   },
   {
     title: "Commissioning & Energisation",
-    text: "Practical support for HV commissioning, energisation readiness, test packs and site acceptance."
+    text: "HV commissioning, energisation readiness, test packs, operational reviews and site acceptance support."
   },
   {
-    title: "Control Room Support",
-    text: "Operational control, switching schedules, safety document tracking and live system coordination."
+    title: "Control Engineer Support",
+    text: "Control-room support, switching schedules, safety document tracking, event logging and live system coordination."
   },
   {
-    title: "HV Documentation",
-    text: "Clear, controlled documentation for permits, energisation packs, isolation plans and compliance records."
+    title: "Project Engineer Consultancy",
+    text: "Technical project support across design review, construction interfaces, commissioning planning and delivery coordination."
   },
   {
-    title: "Renewable Infrastructure",
-    text: "Support across offshore wind, substations, grid connections and high-voltage renewable assets."
+    title: "Project Management Support",
+    text: "Practical project management support for HV scopes, contractor coordination, programme risk and delivery control."
   },
   {
-    title: "Risk & Interface Control",
-    text: "Management of HV interfaces, contractors, boundaries, isolations and project-critical risks."
+    title: "HV Documentation & Compliance",
+    text: "Permit packs, energisation packs, isolation plans, commissioning records, audits and compliance documentation."
   }
 ];
 
 const sectors = [
-  "Offshore Wind",
-  "Grid Connections",
+  "Onshore & Offshore Wind",
+  "Solar PV",
+  "Energy from Waste",
+  "Grid Networks",
   "HV Substations",
-  "GIS / AIS Switchgear",
+  "Battery Storage",
   "Transformer Systems",
-  "Critical Infrastructure"
+  "GIS / AIS Switchgear"
 ];
 
 const values = [
   "Safety-led delivery",
   "Clear operational control",
   "Strong documentation discipline",
-  "Practical site experience"
+  "Practical site experience",
+  "Project-focused execution",
+  "Commercial awareness"
 ];
 
 export default function App() {
@@ -74,6 +78,7 @@ export default function App() {
         <div style={{ display: "flex", gap: "30px", fontSize: "15px" }}>
           <a href="#services" style={{ color: "white", textDecoration: "none" }}>Services</a>
           <a href="#experience" style={{ color: "white", textDecoration: "none" }}>Experience</a>
+          <a href="#projects" style={{ color: "white", textDecoration: "none" }}>Projects</a>
           <a href="#contact" style={{ color: "white", textDecoration: "none" }}>Contact</a>
         </div>
       </div>
@@ -99,14 +104,14 @@ export default function App() {
           marginBottom: "22px",
           textTransform: "uppercase"
         }}>
-          High-Voltage Safety • Commissioning • Control
+          HV Safety • Commissioning • Control • Project Delivery
         </p>
 
         <h1 style={{
           fontSize: "clamp(44px, 6vw, 88px)",
           lineHeight: "1.02",
           letterSpacing: "1px",
-          maxWidth: "1050px",
+          maxWidth: "1100px",
           margin: 0,
           fontWeight: "900"
         }}>
@@ -116,11 +121,13 @@ export default function App() {
         <p style={{
           marginTop: "28px",
           fontSize: "clamp(17px, 1.5vw, 21px)",
-          maxWidth: "820px",
+          maxWidth: "860px",
           color: "#c7c7c7",
           lineHeight: "1.7"
         }}>
-          Fenrir Power provides specialist SAP, commissioning, energisation and control support for offshore wind, substations, grid connections and critical infrastructure.
+          Fenrir Power provides specialist SAP, control engineering, commissioning, energisation,
+          project engineering and project management support for HV projects across onshore and offshore wind,
+          solar, energy from waste, network infrastructure and critical power systems.
         </p>
 
         <div style={{
@@ -176,7 +183,7 @@ export default function App() {
         textAlign: "center",
         color: "#d0d0d0"
       }}>
-        SAP-level HV support across offshore wind, substations, grid-connected assets and critical infrastructure.
+        SAP-level HV support across onshore and offshore energy projects, substations, grid networks and critical infrastructure.
       </section>
 
       {/* SERVICES */}
@@ -192,16 +199,16 @@ export default function App() {
             fontSize: "13px",
             textTransform: "uppercase"
           }}>
-            What I Deliver
+            What Fenrir Power Delivers
           </p>
 
           <h2 style={{
             fontSize: "clamp(36px, 4vw, 56px)",
             margin: "14px 0 0",
-            maxWidth: "780px",
+            maxWidth: "820px",
             lineHeight: "1.1"
           }}>
-            Practical HV support from planning through to energisation.
+            Practical HV support from planning through to energisation and operational handover.
           </h2>
 
           <div style={{
@@ -253,7 +260,7 @@ export default function App() {
               fontSize: "13px",
               textTransform: "uppercase"
             }}>
-              Experience
+              Sector Experience
             </p>
 
             <h2 style={{
@@ -261,7 +268,7 @@ export default function App() {
               lineHeight: "1.1",
               margin: "14px 0 0"
             }}>
-              Built for controlled delivery in demanding HV environments.
+              Built for controlled delivery across HV energy and infrastructure projects.
             </h2>
 
             <p style={{
@@ -270,7 +277,8 @@ export default function App() {
               lineHeight: "1.75",
               fontSize: "18px"
             }}>
-              Delivered by an experienced HV professional operating at Senior Authorised Person level, with practical control, commissioning and energisation experience across renewable and critical infrastructure projects.
+              Experience across renewable generation, grid-connected assets, substations and critical power systems —
+              supporting clients from construction and commissioning through to energisation, operational readiness and handover.
             </p>
           </div>
 
@@ -295,10 +303,216 @@ export default function App() {
         </div>
       </section>
 
+      {/* CONTROL ENGINEER */}
+      <section style={{
+        padding: "110px 20px",
+        background: "#0b0b0b",
+        boxSizing: "border-box"
+      }}>
+        <div style={{
+          maxWidth: "1120px",
+          marginInline: "auto",
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+          gap: "50px",
+          alignItems: "start"
+        }}>
+          <div>
+            <p style={{
+              color: "#f5b642",
+              letterSpacing: "0.16em",
+              fontWeight: "700",
+              fontSize: "13px",
+              textTransform: "uppercase"
+            }}>
+              Control Engineer
+            </p>
+
+            <h2 style={{
+              fontSize: "clamp(36px, 4vw, 56px)",
+              lineHeight: "1.1",
+              margin: "14px 0 0"
+            }}>
+              HV control-room support from SAP level through to 400kV operations.
+            </h2>
+
+            <p style={{
+              marginTop: "24px",
+              color: "#c7c7c7",
+              lineHeight: "1.75",
+              fontSize: "18px"
+            }}>
+              Fenrir Power provides control-room and operational support for high-voltage construction,
+              commissioning and energisation works, including live system control, switching review,
+              safety document coordination, operational interface management and project-critical event logging.
+            </p>
+          </div>
+
+          <div style={{ display: "grid", gap: "14px" }}>
+            {[
+              "400kV Control Person / Control Engineer support",
+              "Safety from the System coordination",
+              "Switching schedule review and operational planning",
+              "Permit, sanction and limitation document tracking",
+              "Control room communication and event logging",
+              "Contractor interface and boundary control",
+              "Energisation readiness and operational risk review"
+            ].map((item) => (
+              <div key={item} style={{
+                padding: "18px",
+                border: "1px solid rgba(255,255,255,0.08)",
+                background: "#111",
+                borderRadius: "10px",
+                color: "#e7e7e7",
+                fontWeight: "700"
+              }}>
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROJECT ENGINEERING */}
+      <section style={{
+        padding: "110px 20px",
+        background: "#111",
+        boxSizing: "border-box"
+      }}>
+        <div style={{
+          maxWidth: "1120px",
+          marginInline: "auto",
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+          gap: "50px",
+          alignItems: "start"
+        }}>
+          <div>
+            <p style={{
+              color: "#f5b642",
+              letterSpacing: "0.16em",
+              fontWeight: "700",
+              fontSize: "13px",
+              textTransform: "uppercase"
+            }}>
+              Project Engineer & Management Consultancy
+            </p>
+
+            <h2 style={{
+              fontSize: "clamp(36px, 4vw, 56px)",
+              lineHeight: "1.1",
+              margin: "14px 0 0"
+            }}>
+              Technical delivery support for complex HV scopes.
+            </h2>
+
+            <p style={{
+              marginTop: "24px",
+              color: "#c7c7c7",
+              lineHeight: "1.75",
+              fontSize: "18px"
+            }}>
+              Support for project teams requiring practical HV engineering input, construction-phase coordination,
+              commissioning planning, contractor interface management and delivery oversight across high-risk electrical scopes.
+            </p>
+          </div>
+
+          <div style={{ display: "grid", gap: "14px" }}>
+            {[
+              "Project engineering support for HV packages",
+              "Commissioning and energisation planning",
+              "Technical interface and contractor coordination",
+              "Programme risk and delivery support",
+              "Review of RAMS, test packs and energisation packs",
+              "Client, contractor and control-room coordination",
+              "Practical support from construction through handover"
+            ].map((item) => (
+              <div key={item} style={{
+                padding: "18px",
+                border: "1px solid rgba(255,255,255,0.08)",
+                background: "#0b0b0b",
+                borderRadius: "10px",
+                color: "#e7e7e7",
+                fontWeight: "700"
+              }}>
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SELECTED PROJECT EXPERIENCE */}
+      <section id="projects" style={{
+        padding: "110px 20px",
+        background: "#0b0b0b",
+        boxSizing: "border-box"
+      }}>
+        <div style={{ maxWidth: "1120px", marginInline: "auto" }}>
+          <p style={{
+            color: "#f5b642",
+            letterSpacing: "0.16em",
+            fontWeight: "700",
+            fontSize: "13px",
+            textTransform: "uppercase"
+          }}>
+            Selected Project Experience
+          </p>
+
+          <h2 style={{
+            fontSize: "clamp(36px, 4vw, 56px)",
+            lineHeight: "1.1",
+            margin: "14px 0 42px"
+          }}>
+            HV project experience across wind, renewables, network infrastructure and critical power systems.
+          </h2>
+
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: "22px"
+          }}>
+            {[
+              ["East Anglia THREE Offshore Wind Farm", "400kV Control Person / Control Engineer"],
+              ["Sofia Offshore Wind Farm", "Offshore 66kV SAP"],
+              ["Baltic Eagle Offshore Wind Farm", "Offshore 66kV SAP"],
+              ["Fécamp Offshore Wind Farm", "Offshore HV SAP"],
+              ["Yunlin Offshore Wind Farm", "HV Supervisor / Offshore Installation Manager"],
+              ["Onshore Renewable & Grid Infrastructure", "HV commissioning, energisation, SAP and project engineering support"]
+            ].map(([project, role]) => (
+              <div key={project} style={{
+                padding: "28px",
+                border: "1px solid rgba(255,255,255,0.08)",
+                borderRadius: "14px",
+                background: "#111"
+              }}>
+                <h3 style={{
+                  margin: 0,
+                  fontSize: "21px",
+                  color: "white"
+                }}>
+                  {project}
+                </h3>
+
+                <p style={{
+                  marginTop: "12px",
+                  color: "#f5b642",
+                  fontWeight: "800",
+                  lineHeight: "1.5"
+                }}>
+                  {role}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* HOW I WORK */}
       <section style={{
         padding: "110px 20px",
-        boxSizing: "border-box"
+        boxSizing: "border-box",
+        background: "#111"
       }}>
         <div style={{ maxWidth: "1120px", marginInline: "auto", textAlign: "center" }}>
           <p style={{
@@ -308,7 +522,7 @@ export default function App() {
             fontSize: "13px",
             textTransform: "uppercase"
           }}>
-            How I Work
+            How Fenrir Power Works
           </p>
 
           <h2 style={{
@@ -327,7 +541,7 @@ export default function App() {
             {values.map((value) => (
               <div key={value} style={{
                 padding: "26px",
-                background: "#111",
+                background: "#0b0b0b",
                 border: "1px solid rgba(255,255,255,0.08)",
                 borderRadius: "12px",
                 fontWeight: "800"
@@ -369,7 +583,7 @@ export default function App() {
           fontSize: "18px",
           lineHeight: "1.7"
         }}>
-          Available for contract and project-based HV support.
+          Available for contract, consultancy and project-based HV support.
         </p>
 
         <a href="mailto:info@fenrirpower.com" style={{
@@ -388,7 +602,7 @@ export default function App() {
           color: "#666",
           fontSize: "14px"
         }}>
-          © {new Date().getFullYear()} Fenrir Power Limited. High-Voltage Safety, Commissioning & Control.
+          © {new Date().getFullYear()} Fenrir Power Limited. HV Safety, Commissioning, Control & Project Delivery.
         </p>
       </section>
 
